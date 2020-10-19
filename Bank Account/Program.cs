@@ -60,6 +60,10 @@ namespace Bank_Account
                                 case "return":
                                     savingsExit = true;
                                     break;
+                                default:
+                                    Console.WriteLine("Please enter a valid key");
+                                    savingsExit = false;
+                                    break;
                             }
                         }
                         menuExit = false;
@@ -76,6 +80,7 @@ namespace Bank_Account
                                 case "deposit":
                                     Console.WriteLine("Deposit amount:");
                                     string chequingDeposit = Console.ReadLine();
+
                                     double chequingsDep = Convert.ToDouble(chequingDeposit);
                                     chequings.MakeDeposit(chequingsDep);
                                     chequingExit = false;
@@ -96,6 +101,10 @@ namespace Bank_Account
                                 case "r":
                                 case "return":
                                     chequingExit = true;
+                                    break;
+                                default:
+                                    Console.WriteLine("Please enter a valid key");
+                                    chequingExit = false;
                                     break;
                             }
                         }
@@ -140,6 +149,10 @@ namespace Bank_Account
                                 case "return":
                                     globalExit = true;
                                     break;
+                                default:
+                                    Console.WriteLine("Please enter a valid key");
+                                    globalExit = false;
+                                    break;
                             }
                         }
                         menuExit = false;
@@ -148,8 +161,14 @@ namespace Bank_Account
                     case "exit":
                         menuExit = true;
                         break;
+                    default:
+                        Console.WriteLine("Please enter a valid key");
+                        menuExit = false;
+                        break;
                 }
             }
         }
+
     }
+
 }

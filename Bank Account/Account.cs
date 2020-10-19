@@ -92,6 +92,7 @@ namespace Bank_Account
             numberDeposit = 0;
             totalDeposits = 0;
             monthServiceCharge = 0;
+            startingBalance = currentBalance;
             return info;
         }
 
