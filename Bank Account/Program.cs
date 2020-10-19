@@ -52,7 +52,7 @@ namespace Bank_Account
                                     savingsExit = false;
                                     break;
                                 case "c":
-                                case "Close":
+                                case "close":
                                     Console.WriteLine(savings.CloseAndReport());
                                     savingsExit = false;
                                     break;
@@ -89,7 +89,7 @@ namespace Bank_Account
                                     chequingExit = false;
                                     break;
                                 case "c":
-                                case "Close":
+                                case "close":
                                     Console.WriteLine(chequings.CloseAndReport());
                                     chequingExit = false;
                                     break;
@@ -126,13 +126,14 @@ namespace Bank_Account
                                     globalExit = false;
                                     break;
                                 case "c":
-                                case "Close":
+                                case "close":
                                     Console.WriteLine(global.CloseAndReport());
                                     globalExit = false;
                                     break;
                                 case "d":
                                 case "report":
                                     //Console.WriteLine(global.USValue());
+                                    Console.WriteLine("You never specified anything about the rate soooo....");
                                     globalExit = false;
                                     break;
                                 case "r":
